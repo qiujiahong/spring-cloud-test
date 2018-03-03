@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: loc-config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+
+server:
+  port: 8881
+
+loc.cloud:
+  config:
+    param1: abc
+    param2: 111
+  controller:
+    param3: xxx
+
+management:
+  address: 127.0.0.1
+  security:
+    enabled: false
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 30
+    serviceUrl:
+      defaultZone: http://eureka-server-1:1111/eureka/,http://eureka-server-2:1112/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 90
+    lease-renewal-interval-in-seconds: 30

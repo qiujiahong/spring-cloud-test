@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: loc-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dragontree101/dragon-config-repo.git
+          searchPaths: /{application}
+          username: dragonlong1986@126.com
+          password: longlong0
+#          force-pull: true
+#          basedir: "/opt/hnconfig"
+
+

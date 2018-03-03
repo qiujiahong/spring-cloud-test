@@ -1,0 +1,14 @@
+server:
+  port: 1112
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://eureka-server-1:1111/eureka,http://eureka-server-2:1112/eureka
+  instance:
+    hostname: eureka-server-2 # cluster
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: false # 关闭自我保护模式（缺省为打开）

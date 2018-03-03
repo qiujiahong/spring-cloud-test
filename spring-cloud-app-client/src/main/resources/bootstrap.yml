@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: app-client
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://127.0.0.1:8888
+      fail-fast: true
+
+server:
+  port: 8882
+
+
+eureka:
+  client:
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 30
+    serviceUrl:
+      defaultZone: http://eureka-server-1:1111/eureka/,http://eureka-server-2:1112/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 90
+    lease-renewal-interval-in-seconds: 30
+
+ribbon:
+  MaxAutoRetries: 0 # 对当前实例的重试次数
+  MaxAutoRetriesNextServer: 1 # 切换实例的重试次数
+  OkToRetryOnAllOperations: false #重试操作
+  ReadTimeout: 30000 # 请求处理的超时时间
+  ConnectTimeout: 5000 # 请求连接超时时间
+feign:
+  hystrix:
+    enabled: true

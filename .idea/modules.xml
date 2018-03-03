@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-app/spring-cloud-app.iml" filepath="$PROJECT_DIR$/spring-cloud-app/spring-cloud-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-app-client/spring-cloud-app-client.iml" filepath="$PROJECT_DIR$/spring-cloud-app-client/spring-cloud-app-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/spring-cloud-config-server.iml" filepath="$PROJECT_DIR$/config-server/spring-cloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/register-server/spring-cloud-register-server.iml" filepath="$PROJECT_DIR$/register-server/spring-cloud-register-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-study.iml" filepath="$PROJECT_DIR$/spring-cloud-study.iml" />
+    </modules>
+  </component>
+</project>
